@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width/height */
+}
+
+/* Remove default margin from body and html */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures body takes at least full viewport height */
+  /* Apply the theme variables directly to body */
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  /* Add transitions directly to the properties that change */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root{
+  --text-primary:#0B1426;
+  --bg-primary:rgba(118, 116, 116, 0.153);
+  --bg-secondary:white;
+  --table-border: #1a202c;
+  --orbitron-font-style:"Orbitron", sans-serif;
+  --shadow-color:grey;
+  --hover-text-primary: rgb(87, 86, 86);
+}
+
+.dark-theme {
+    --bg-primary: #1a202c;
+    --bg-secondary: #2d3748;
+    --table-border: #e2e8f0;
+    --text-primary: #e2e8f0;
+    --text-secondary: #a0aec0;
+    --border-color: #4a5568;
+    --button-bg: #63b3ed;
+    --button-text: #1a202c;
+    --shadow-color:#e2e8f0;
+    --hover-text-primary : #a8a8a8;
+}
